@@ -1,5 +1,9 @@
 # ERC-20 TOKEN LAUNCH CONTRACT
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Solidity](https://img.shields.io/badge/Solidity-0.8.19-blue)
+![Hardhat](https://img.shields.io/badge/Built%20with-Hardhat-yellow)
+
 A secure and production-ready ERC-20 token built with Solidity, OpenZeppelin, and Hardhat.
 
 This project demonstrates the full lifecycle of a token launch including:
@@ -68,6 +72,15 @@ Authorized accounts with the PAUSER_ROLE can pause all token transfers.
 This is useful if a vulnerability or emergency occurs.
 Transfers resume when the contract is unpaused.
 
+BURN ON BEHALF (burnFrom)
+Any approved account can burn tokens on behalf of another address using burnFrom.
+Requires prior approval via the approve function.
+Each burn emits a TokensBurned event.
+
+ADMIN ROLE PROTECTION
+The contract prevents the admin from accidentally renouncing the DEFAULT_ADMIN_ROLE.
+This ensures the contract can never be permanently locked without an administrator.
+
 EVENT TRACKING
 
 The contract emits events for important actions:
@@ -106,7 +119,7 @@ contracts/
     SampleToken.sol
 
 scripts/
-    deploy.js
+    deploy-token.js
 
 test/
     SampleToken.test.js
@@ -195,7 +208,7 @@ Sign transactions using the deployer's wallet
 
 To deploy the contract to Sepolia:
 
-npx hardhat run scripts/deploy.js --network sepolia
+npx hardhat run scripts/deploy-token.js --network sepolia
 
 The deployment script performs the following steps:
 
