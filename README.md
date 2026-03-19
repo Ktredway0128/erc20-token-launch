@@ -199,6 +199,8 @@ ALCHEMY_API_URL=YOUR_SEPOLIA_RPC_URL
 
 DEPLOYER_PRIVATE_KEY=YOUR_PRIVATE_KEY
 
+ETHERSCAN_API_KEY=YOUR_ETHERSCAN_API_KEY
+
 These values allow Hardhat to:
 
 Connect to the Sepolia network
@@ -220,7 +222,15 @@ Deploys the token with constructor parameters
 
 Waits for confirmation
 
-Outputs the deployed contract address
+Outputs the deployed contract address..
+
+### SEPOLIA TESTNET DEPLOYMENT
+
+| Contract | Address | Etherscan |
+|----------|---------|-----------|
+| SampleToken | `0x036150039c33b1645080a9c913f96D4c65ccca48` | [View on Etherscan](https://sepolia.etherscan.io/address/0x036150039c33b1645080a9c913f96D4c65ccca48#code) |
+
+Deployed: 2026-03-19
 
 ## EXAMPLE TOKEN CONFIGURATION
 
