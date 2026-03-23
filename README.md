@@ -6,6 +6,8 @@
 
 A secure and production-ready ERC-20 token built with Solidity, OpenZeppelin, and Hardhat.
 
+> ⚠️ These contracts have not been professionally audited. A full security audit is strongly recommended before any mainnet deployment.
+
 This project demonstrates the full lifecycle of a token launch including:
 
 Smart contract development
