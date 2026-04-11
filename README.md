@@ -167,7 +167,7 @@ This modular architecture provides strong security and reusable functionality wh
 
 git clone https://github.com/Ktredway0128/token-launch
 
-cd erc20-token-launch
+cd token-launch
 
 ### INSTALL DEPENDENCIES:
 
