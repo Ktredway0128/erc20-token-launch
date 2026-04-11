@@ -1,4 +1,4 @@
-# ERC-20 TOKEN LAUNCH CONTRACT
+# TOKEN LAUNCH CONTRACT
 
 [![Verified on Etherscan](https://img.shields.io/badge/Etherscan-Verified-brightgreen)](https://sepolia.etherscan.io/address/0x036150039c33b1645080a9c913f96d4c65ccca48#code)
 
